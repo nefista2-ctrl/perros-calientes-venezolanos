@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perros Calientes Venezolanos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff8e1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 20px;
+    }
+    img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .menu-item {
+      background: #ffe082;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: left;
+    }
+    .menu-item h3 {
+      color: #d32f2f;
+      text-align: center;
+    }
+    ol {
+      margin-left: 20px;
+    }
+    form {
+      margin-top: 10px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #2e7d32;
+    }
+    .pago {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fce4ec;
+      border-radius: 10px;
+    }
+    .pago button {
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    .pago button:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌭 Te Amo Venezuela - Perros Calientes 🌭</h1>
+    <p>El auténtico sabor venezolano en cada mordida</p>
+  </header>
 
+  <!-- Cardápio con recetas -->
+  <div class="menu">
+    <!-- Estilo Americano -->
+    <div class="menu-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Hot_dog_with_mustard.png" alt="Clásico">
+      <h3>Estilo Americano (Clásico)</h3>
+      <p><strong>Toques especiales:</strong> cebolla fresca picada, pepinillos encurtidos y relish.</p>
+      <p><strong>Salsas base:</strong> kétchup, mostaza amarilla y mayonesa.</p>
+      <p><em>Ideal para:</em> comida rápida, sencilla y tradicional.</p>
+
+      <form>
+        <h4>Selecciona tus ingredientes:</h4>
+        <label><input type="checkbox" checked> Salchicha</label>
+        <label><input type="checkbox" checked> Pan suave</label>
+        <label><input type="checkbox"> Cebolla fresca</label>
+        <label><input type="checkbox"> Pepinillos encurtidos</label>
+        <label><input type="checkbox"> Relish</label>
+        <label><input type="checkbox" checked> Kétchup</label>
+        <label><input type="checkbox" checked> Mostaza amarilla</label>
+        <label><input type="checkbox"> Mayonesa</label>
+        <button type="button" onclick="alert('Pedido personalizado estilo Americano confirmado!')">Confirmar Pedido</button>
+      </form>
+    </div>
+
+    <!-- Estilo Brasileño -->
+    <div class="menu-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Hotdog_chili.jpg" alt="Brasileño">
+      <h3>Estilo Brasileño (Cachorro Quente)</h3>
+      <p><strong>Toques especiales:</strong> puré de papa suave, maíz tierno, arvejas y papa paja crujiente.</p>
+      <p><strong>Salsas base:</strong> mayonesa, kétchup y mostaza.</p>
+
+      <form>
+        <h4>Selecciona tus ingredientes:</h4>
+        <label><input type="checkbox" checked> Salchicha</label>
+        <label><input type="checkbox" checked> Pan suave</label>
+        <label><input type="checkbox"> Puré de papa</label>
+        <label><input type="checkbox"> Maíz tierno</label>
+        <label><input type="checkbox"> Arvejas</label>
+        <label><input type="checkbox"> Papa paja</label>
+        <label><input type="checkbox"> Mayonesa</label>
+        <label><input type="checkbox"> Kétchup</label>
+        <label><input type="checkbox"> Mostaza</label>
+        <button type="button" onclick="alert('Pedido personalizado estilo Brasileño confirmado!')">Confirmar Pedido</button>
+      </form>
+    </div>
+
+    <!-- Estilo Venezolano/Colombiano -->
+    <div class="menu-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotdog_bacon.jpg" alt="Callejero">
+      <h3>Estilo Venezolano y Colombiano (Callejero)</h3>
+      <p><strong>Toques especiales:</strong> queso rallado tipo costeño, tocineta y cebolla.</p>
+      <p><strong>Salsas base:</strong> tradicionales más salsa de ajo, salsa de piña o guasacaca.</p>
+
+      <form>
+        <h4>Selecciona tus ingredientes:</h4>
+        <label><input type="checkbox" checked> Salchicha</label>
+        <label><input type="checkbox" checked> Pan suave</label>
+        <label><input type="checkbox"> Queso rallado</label>
+        <label><input type="checkbox"> Tocineta</label>
+        <label><input type="checkbox"> Cebolla</label>
+        <label><input type="checkbox"> Salsa de ajo</label>
+        <label><input type="checkbox"> Salsa de piña</label>
+        <label><input type="checkbox"> Guasacaca</label>
+        <button type="button" onclick="alert('Pedido personalizado estilo Callejero confirmado!')">Confirmar Pedido</button>
+      </form>
+    </div>
+
+    <!-- Perro con Chili -->
+    <div class="menu-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Hotdog_chili.jpg" alt="Chili">
+      <h3>Perro con Chili</h3>
+      <p>Un clásico lleno de sabor, con chili caliente y queso derretido.</p>
+
+      <h4>Pasos sencillos para prepararlo:</h4>
+      <ol>
+        <li><strong>Prepara las salchichas:</strong> Asa o dora tus salchichas favoritas a fuego medio-alto durante 5 a 7 minutos.</li>
+        <li><strong>Precalienta el pan:</strong> Tuesta ligeramente los panes en sartén u horno durante 1 o 2 minutos.</li>
+        <li><strong>Agrega los ingredientes:</strong> Coloca la salchicha en el pan, baña con chili caliente y espolvorea queso rallado hasta derretir.</li>
+      </ol>
+
+      <form>
+        <h4>Selecciona tus ingredientes:</h4>
+        <label><input type="checkbox" checked> Salchicha</label>
+        <label><input type="checkbox" checked> Pan tostado</label>
+        <label><input type="checkbox"> Chili con carne</label>
+        <label><input type="checkbox"> Queso cheddar/mozzarella</label>
+        <label><input type="checkbox"> Cebolla fresca</label>
+        <label><input type="checkbox"> Pepinillos</label>
+        <label><input type="checkbox"> Salsas (ketchup, mostaza, mayonesa)</label>
+        <button type="button" onclick="alert('Pedido personalizado estilo Chili confirmado!')">Confirmar Pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sección de pago -->
+  <div id="pago" class="pago">
+    <h2>💳 Opciones de pago</h2>
+    <p>Después de elegir tu perro caliente, selecciona tu método de pago:</p>
+    <button onclick="alert('Pago con tarjeta confirmado!')">Pagar con Tar
